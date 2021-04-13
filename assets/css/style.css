@@ -1,0 +1,289 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html, body {
+    
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+.content {
+    height: 100%;
+    display: flex;
+    flex: 1;
+   
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.topo, .topo_mobile {
+    display: flex;
+    justify-content:flex-end;
+    font-size: 13px;
+    height: 60px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.email {
+    padding-right: 15px;
+}
+.email a:hover {
+    text-decoration: underline;
+
+}
+.tx_imagens {
+    padding-right: 30px;
+}
+.tx_imagens a:hover {
+    text-decoration: underline;
+}
+.img_login {
+    padding-right: 20px;
+}
+.icapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin-right: 25px;
+    width: 20px;
+    height: 20px;
+}
+.icapp:hover {
+    background-color: rgba(224, 221, 221, 0.541);
+    border-radius: 20px;
+}
+.bola {
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+    background-color: #5F6368;
+    border-radius: 2px;
+}
+
+.logo_meio {
+    display: flex;
+    justify-content: center;
+}
+#campo {
+    padding-top: 30px;
+}
+.pesquisa {
+    max-width: 584px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+}
+.pesquisa:hover {
+    box-shadow: 0px 1px 4px rgba(122, 122, 122, 0.486);
+}
+.retangulo {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+}
+.lupa {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+.espaço {
+    width: 447px;
+    height: 40px;
+}
+.icones_direita {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+.teclado {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    line-height: 44px;
+}
+.microfone {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    line-height: 44px;
+}
+#pesquisa_google {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #3c4043;
+}
+.pesq_abaixo {
+   
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 16px;
+    margin: 11px 4px;
+    background-color: #f8f9fa;
+    
+}
+.pesq_abaixo:hover{
+    box-shadow: 0px 0px 0px 1px rgb(216, 214, 214);
+}
+.estou_sorte {
+   
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 16px;
+    margin: 11px 4px;
+    background-color: #f8f9fa;
+}
+.estou_sorte:hover {
+    box-shadow: 0px 0px 0px 1px rgb(216, 214, 214);
+}
+.dispo {
+    text-align: center;
+    font-size: small;
+    
+}
+.dispo p a {
+    color: #1a0dab;;
+}
+.dispo p a:hover {
+    text-decoration: underline;
+}
+
+.topico {
+    
+    background-color:#F2F2F2;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0c2;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+.final {
+    display: flex;
+    justify-content: space-between;
+    background-color:#F2F2F2;
+    padding: 15px 30px;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+.sobre a{
+    padding-right: 30px;
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+}
+.termos a {
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+    padding-right: 30px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 835px) {
+
+    .sobre {
+        display: none;
+    }
+    .final {
+        justify-content: center;
+    }
+    .termos a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .topo {
+        text-transform: uppercase;
+    }
+    .topo_mobile {
+        display: flex;
+        padding-left: 20px;
+        font-weight: bold;
+        color: #70757a;
+    }
+    .topo_mobile a {
+        color: #70757a;
+        font-size: 12px;
+    }
+    .email a {
+        color: blue;
+        text-decoration: underline;
+    }
+    .topo {
+        justify-content: space-between;
+    }
+    .teclado img {
+        display: none;
+    }
+    
+}
+@media (max-width:595px) {
+
+    .espaço {
+        width: 300px;
+    }
+    .topo {
+        justify-content: center;
+    }
+    .logo_meio img {
+        width: 200px;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    .espaço {
+        width: 200px;
+    }
+
+}
+@media (max-width:320px) {
+
+    .espaço {
+        width: 150px;
+    }
+    .termos a {
+        padding-right: 24px;
+    }
+
+}
+
+
